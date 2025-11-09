@@ -3,7 +3,7 @@ MAINTAINER Sharoon Thomas <sharoon.thomas@openlabs.co.in>
 
 # Install dependencies for running web service
 RUN apt-get update && apt-get install -y python3-pip
-RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade pip3
 RUN pip3 install werkzeug executor gunicorn
 
 ADD app.py /app.py
