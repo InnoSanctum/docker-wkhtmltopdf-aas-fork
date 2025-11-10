@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get install python3 python
 FROM python:3
 RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir werkzeug executor gunicorn
+RUN pip install --no-cache-dir werkzeug executor==23.2 gunicorn
 
 ADD app.py /app.py
 EXPOSE 80
